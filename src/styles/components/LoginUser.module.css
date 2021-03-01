@@ -1,0 +1,87 @@
+.container {
+  max-width: 420px;
+}
+
+.container form {
+  position: relative;
+}
+
+.container input,
+.container button {
+  border: 0;
+  outline: none;
+}
+
+.container input {
+  width: 80%;
+  height: 80px;  
+  padding: 0 1.2rem;
+  background: var(--white);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.container input.error::placeholder {
+  color: red;
+}
+
+.container button {
+  width: 20%;
+  height: 80px;
+  padding: 0 1.2rem;
+  background: var(--red-dark);
+  border-radius: 0px 5px 5px 0px;
+  transition: background 0.4s;
+}
+
+.container button:hover {
+  background: #b42c35;
+}
+
+.container strong{
+  color: var(--white);
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 1.5rem 0;
+  position: relative;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container strong span{
+  width: 30%;
+  height: 2px;
+  display: block;
+  background: var(--white);
+}
+
+.icon{
+  font-size: 1.1rem;
+  color: var(--white)
+}
+
+.container input.darkTheme {
+  background: var(--dark);
+  color: white;
+}
+
+@media(max-width: 460px) {
+  .container input {
+    height: 60px;  
+  }
+  
+  .container input.error::placeholder {
+    color: red;
+  }
+  
+  .container button {
+    width: 20%;
+    height: 60px;
+    padding: 0 1.2rem;
+    background: var(--red-dark);
+    border-radius: 0px 5px 5px 0px;
+    transition: background 0.4s;
+  }
+}

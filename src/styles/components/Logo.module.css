@@ -1,0 +1,15 @@
+.logo {
+  position: absolute;
+  top: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+@media(max-width: 500px) {
+  .logo {
+    top: 50%;
+    left: 1.3rem;
+    transform: translateY(-50%);
+  }
+}

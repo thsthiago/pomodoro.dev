@@ -1,0 +1,114 @@
+.countdownContainer {
+  display: flex;
+  align-items: center;
+  font-family: Rajdhani;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.countdownContainer > div {
+  flex: 1;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: var(--white);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.10);
+  border-radius: 5px;
+  font-size: 8.5rem;
+  text-align: center;
+}
+
+.countdownContainer > div span {
+  flex: 1;
+  transition: color 0.5s, background 0.4s, border 0.5s;
+}
+
+.countdownContainer > div span:first-child {
+  border-right: 1px solid #f0f1f3;
+}
+
+.countdownContainer > div span:last-child {
+  border-left: 1px solid #f0f1f3;
+}
+
+.countdownContainer > span {
+  font-size: 6.25rem;
+  margin: 0 0.5rem; 
+  transition: color 0.5s;
+}
+
+.countdownButton {
+  width: 100%;
+  height: 5rem;
+
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: var(--red-primary);
+  color: var(--white);
+
+  font-size: 1.25rem;
+  font-weight: 600;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+
+  transition: color 0.5s, background 0.4s;
+  outline: none;
+}
+
+.cycleClosed {
+  color: var(--green);
+  font-size: 1.25rem;
+  position: relative;
+  left: 15px;
+}
+
+.countdownButton:not(:disabled):hover {
+  background: var(--red-dark);
+}
+
+.countdownButtonActive {
+  background: var(--white);
+  color: var(--title);
+}
+
+.countdownButtonActive:not(:disabled):hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.countdownButton:disabled {
+  background: var(--white);
+  color: var(--text);
+  cursor: not-allowed;
+  border-bottom: 5px solid var(--green);
+}
+
+.darkTheme {
+  background: var(--dark);
+  color: var(--gray-line);
+}
+
+.darkThemeColor{
+  color: var(--gray-line);
+}
+
+.countdownContainer > div span.darkTheme:first-child {
+  border-right: 1px solid var(--background-dark);
+}
+
+.countdownContainer > div span.darkTheme:last-child {
+  border-left: 1px solid var(--background-dark);
+}
+
+.countdownButton.darkTheme:disabled {
+  background: var(--dark);
+  color: var(--gray-line);
+}

@@ -1,0 +1,87 @@
+.container {
+  background: var(--white);
+
+  width: 90%;
+  max-width: 400px;
+  height: 90%;
+  max-height: 300px; 
+  padding: 1.5rem 1rem; 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.30);
+  animation-name: display;
+  animation-duration: 0.4s;
+
+  transition: background 0.4s;
+  z-index: 3;
+}
+
+.display {
+  display: none;
+}
+
+.icon {
+  color: var(--red);
+  font-size: 4rem;
+}
+
+.container strong{
+  text-align: center;
+  transition: color 0.4s;
+}
+
+.container div {
+  display: flex;
+  width: 100%;
+}
+
+.container div button{
+  flex: 1;
+  margin: 0 0.5rem;
+
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 5px;
+
+  color: var(--white);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: filter 0.2s;
+}
+
+.continuar {
+  background: var(--red);
+}
+
+.voltar {
+  background: var(--green);
+}
+
+.container div button:hover {
+  filter: brightness(0.9);
+}
+
+@keyframes display {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.container.darkTheme {
+  background-color: var(--dark);
+  color: var(--gray-line);
+}

@@ -1,0 +1,88 @@
+.darkTheme {
+  background: var(--background-dark);
+}
+
+.container {
+  height: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  padding-left: 7.4rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container section {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.25rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.profile,
+.challenge {
+  max-width: 450px;
+}
+
+@media(max-width: 880px) {
+  .container {
+    padding-left: 10rem;
+    padding-top: 2rem;
+  }
+  
+  .container section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .profile{
+    margin-top: 100px;
+  }
+}
+
+
+@media(max-width: 500px){
+  .container {
+    padding-top: 10rem;
+    padding-left: 2rem
+  }
+  
+  .container section {
+    flex: 1;
+  
+    display: grid;
+    grid-template-columns: auto;
+    gap: 6.25rem;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .profile{
+    margin-top: 100px;
+  }
+}
+
+@media(min-width: 500px) and (max-height: 350px){
+  .container {
+    padding-left: 10rem;
+    padding-top: 2rem
+  }
+  
+  .container section {
+    flex: 1;
+  
+    display: grid;
+    grid-template-columns: auto;
+    gap: 6.25rem;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .profile{
+    margin-top: 100px;
+  }
+}

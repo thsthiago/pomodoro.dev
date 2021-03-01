@@ -1,0 +1,43 @@
+.container {
+  max-width: 420px;
+  display: flex;
+}
+
+.container strong {
+  width: 80%;
+  height: 80px;
+  padding: 0 1.2rem;
+  background: var(--white);
+  border-radius: 5px 0px 0px 5px;
+  display: block;
+  line-height: 80px;
+  text-align: center;
+  color: var(--text);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+}
+
+.container button {
+  border: 0;
+  outline: none;
+  width: 20%;
+  height: 80px;
+  padding: 0 1.2rem;
+  background: var(--green);
+  border-radius: 0px 5px 5px 0px;
+  transition: filter 0.4s;
+  color: var(--gray-line);
+}
+
+.container button:hover {
+  filter: brightness(0.9);
+}
+
+.icon{
+  font-size: 1.1rem;
+  color: var(--white)
+}
+
+.container strong.darkTheme{
+  background: var(--dark);
+  color: var(--white);
+}
