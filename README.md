@@ -180,7 +180,7 @@ Obrigado ao [Diego](https://blog.rocketseat.com.br/author/diego/) e a todos da e
  <sub><b>Thiago Cabral</b></sub></a>
  <br />
 
-[![Linkedin Badge](https://img.shields.io/badge/Thiago-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/thsthiago-cabral/)](www.linkedin.com/in/thsthiago-cabral/) 
+[![Linkedin Badge](https://img.shields.io/badge/Thiago-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/thsthiago-cabral/)](https://www.linkedin.com/in/thsthiago-cabral/) 
 [![Gmail Badge](https://img.shields.io/badge/thiagocabral477@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white&link=mailto:thiagocabral477@gmail.com)](mailto:thiagocabral477@gmail.com)
 
 ---
