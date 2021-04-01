@@ -118,7 +118,7 @@ $ cd pomodoro.dev
 ```bash
 
 # Instale as dependências
-$ yarn add
+$ yarn
 
 # Execute a aplicação em modo de desenvolvimento
 $ yarn dev
